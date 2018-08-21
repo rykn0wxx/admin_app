@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" class="rykn0wxx no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="author" content="rykn0wxx" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+		<title>rykn0wxx</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<script type="text/javascript">
+			document.documentElement.className = "rykn0wxx js";
+		</script>
+
+		<%= tag :meta, name: 'turbolinks-root', content: '/' %>
+		<%= tag :meta, name: 'turbolinks-cache-control', content: 'no-preview' %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="skin-blue sidebar-mini fixed sidebar-collapse">
+
+		<div class="wrapper">
+
+			<header class="main-header">
+
+				<a href="#" class="logo">
+					<span class="logo-mini"><b>a</b>dm</span>
+					<span class="logo-lg"><b>admin</b>istrate</span>
+				</a>
+
+				<nav class="navbar navbar-static-top" role="navigation">
+					<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+						<%= material_icon.menu %>
+					</a>
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#">
+									<%= material_icon.hot_tub %>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+			</header>
+
+			<aside class="main-sidebar">
+
+				<section class="sidebar">
+					<ul class="sidebar-menu" data-widget="tree">
+						<li class="header">HEADER</li>
+						<li>
+							<%= link_to index_path do %>
+							  <%= material_icon.face %>
+								<span>Link</span>
+							<% end %>
+						</li>
+						<li>
+							<%= link_to widget_path do %>
+								<%= material_icon.laptop %>
+								<span>Link</span>
+							<% end %>
+						</li>
+					</ul>
+				</section>
+
+			</aside>
+
+			<div class="content-wrapper">
+
+				<section class="content-header">
+		      <h1>
+		        Page Header
+		        <small>Optional description</small>
+		      </h1>
+		      <ol class="breadcrumb">
+		        <li><a href="#"> <i class="material_icons">dashboard</i> Level</a></li>
+		        <li class="active">Here</li>
+		      </ol>
+		    </section>
+
+				<section class="content container-fluid">
+					<h1>Content</h1>
+					<%= yield %>
+				</section>
+
+			</div>
+
+
+		</div>
+
+		<%= render "shared/scripts_js" %>
+  </body>
+</html>
