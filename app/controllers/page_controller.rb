@@ -3,5 +3,7 @@ class PageController < ApplicationController
   end
 
   def widget
+		@user_custom = 'auth'
+		render layout: 'authentication'
   end
 end

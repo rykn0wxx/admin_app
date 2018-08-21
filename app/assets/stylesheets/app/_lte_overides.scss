@@ -1,4 +1,8 @@
 .rykn0wxx {
+	body {
+		background-color: #eaeaea;
+		color: rgba(0,0,0,0.87);
+	}
 	.main-sidebar {
 		padding-top: 60px;
 	}
@@ -35,5 +39,52 @@
 				padding-top: 120px;
 			}
 		}
+	}
+	.skinner {
+		.main-header {
+			box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+			// box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 2px 2px rgba(0, 0, 0, 0.098), 0px 0px 5px 1px rgba(0, 0, 0, 0.084);
+			.navbar {
+				@include nav-var($d-pri-bg, rgba($d-pri-fc, 0.8));
+				.sidebar-toggle {
+					color: rgba($d-pri-fc, 0.7);
+					transition: $def-trans;
+					&:hover {
+						color: rgba($d-pri-fc, 0.9);
+						background-color: shade($d-pri-bg, 20%);
+					}
+				}
+				@media (max-width: 767px) {
+	        .dropdown-menu {
+	          li {
+	            &.divider {
+	              background-color: rgba(255, 255, 255, 0.1);
+	            }
+	            a {
+	              color: rgba($d-pri-fc, 0.8);
+								transition: $def-trans;
+	              &:hover {
+									color: rgba($d-pri-fc, 0.9);
+	                background-color: shade($d-pri-bg, 20%);
+	              }
+	            }
+	          }
+	        }
+	      }
+			}
+			.logo {
+				@include logo-var(darken($d-pri-bg, 5%));
+			}
+			li.user-header {
+	      background-color: $d-pri-bg;
+	    }
+		}
+		.main-sidebar {
+			box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+		}
+		.content-header {
+	    background: transparent;
+	  }
+		@include skin-dark-sb($d-sb-bg, $d-pri-bg);
 	}
 }

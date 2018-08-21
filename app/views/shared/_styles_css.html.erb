@@ -1,0 +1,9 @@
+<% content_for(:css_styles) do %>
+	<% if @user_custom %>
+	  <%= stylesheet_link_tag @user_custom, media: 'all', 'data-turbolinks-track': 'reload' %>
+	<% else %>
+	  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<% end %>
+<% end %>
+
+<%= yield :css_styles %>

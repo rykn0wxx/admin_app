@@ -1,3 +1,11 @@
+@font-face {
+	font-display: fallback;
+}
+
+@import "config/colors";
+@import "config/variables";
+@import "config/mixins";
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
