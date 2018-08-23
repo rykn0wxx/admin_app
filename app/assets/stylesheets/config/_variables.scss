@@ -1,3 +1,100 @@
+// Custom BS4 Colors
+$z_blush: rgb(244, 217, 223);
+$z_pink: rgb(240, 197, 214);
+$z_red: rgb(209, 83, 79);
+$z_currant: rgb(145, 55, 55);
+$z_sand: rgb(247, 227, 222);
+$z_peach: rgb(248, 196, 161);
+$z_orange: rgb(240, 130, 100);
+$z_umber: rgb(128, 102, 72);
+$z_bone: rgb(232, 229, 218);
+$z_butter: rgb(255, 243, 200);
+$z_yellow: rgb(254, 224, 161);
+$z_sage: rgb(164, 181, 147);
+$z_seed: rgb(222, 230, 195);
+$z_citrus: rgb(197, 219, 145);
+$z_leaf: rgb(108, 183, 126);
+$z_frond: rgb(63, 76, 59);
+$z_sea-glass: rgb(173, 209, 195);
+$z_enamel: rgb(118, 166, 147);
+$z_turq: rgb(55, 122, 113);
+$z_forest: rgb(41, 71, 67);
+$z_ice: rgb(209, 239, 240);
+$z_sky: rgb(164, 220, 222);
+$z_sea: rgb(81, 156, 144);
+$z_steel-blue: rgb(35, 49, 61);
+$z_cloud: rgb(218, 238, 250);
+$z_chambray: rgb(134, 193, 224);
+$z_blue-sea: rgb(65, 129, 161);
+$z_peacock: rgb(24, 41, 45);
+$z_frost: rgb(212, 212, 228);
+$z_periwinkle: rgb(124, 131, 168);
+$z_blue: rgb(31, 39, 77);
+$z_navy: rgb(16, 19, 31);
+$z_petal: rgb(240, 231, 239);
+$z_spring: rgb(175, 139, 183);
+$z_violet: rgb(85, 68, 117);
+$z_ore: rgb(100, 91, 117);
+$z_cocoa: rgb(214, 198, 182);
+$z_chipmunk: rgb(178, 158, 138);
+$z_brown: rgb(132, 115, 100);
+$z_deep-sepia: rgb(70, 69, 67);
+$z_metal: rgb(208, 210, 217);
+$z_aluminium: rgb(159, 161, 168);
+$z_charcoal: rgb(98, 99, 107);
+$z_black: rgb(26, 26, 26);
+
+$colors: ();
+$colors: map-merge(
+	(
+		"z_blush": $z_blush,
+		"z_pink": $z_pink,
+		"z_red": $z_red,
+		"z_currant": $z_currant,
+		"z_sand": $z_sand,
+		"z_peach": $z_peach,
+		"z_orange": $z_orange,
+		"z_umber": $z_umber,
+		"z_bone": $z_bone,
+		"z_butter": $z_butter,
+		"z_yellow": $z_yellow,
+		"z_sage": $z_sage,
+		"z_seed": $z_seed,
+		"z_citrus": $z_citrus,
+		"z_leaf": $z_leaf,
+		"z_frond": $z_frond,
+		"z_sea-glass": $z_sea-glass,
+		"z_enamel": $z_enamel,
+		"z_turq": $z_turq,
+		"z_forest": $z_forest,
+		"z_ice": $z_ice,
+		"z_sky": $z_sky,
+		"z_sea": $z_sea,
+		"z_steel-blue": $z_steel-blue,
+		"z_cloud": $z_cloud,
+		"z_chambray": $z_chambray,
+		"z_blue-sea": $z_blue-sea,
+		"z_peacock": $z_peacock,
+		"z_frost": $z_frost,
+		"z_periwinkle": $z_periwinkle,
+		"z_blue": $z_blue,
+		"z_navy": $z_navy,
+		"z_petal": $z_petal,
+		"z_spring": $z_spring,
+		"z_violet": $z_violet,
+		"z_ore": $z_ore,
+		"z_cocoa": $z_cocoa,
+		"z_chipmunk": $z_chipmunk,
+		"z_brown": $z_brown,
+		"z_deep-sepia": $z_deep-sepia,
+		"z_metal": $z_metal,
+		"z_aluminium": $z_aluminium,
+		"z_charcoal": $z_charcoal,
+		"z_black": $z_black
+	),
+	$colors
+);
+
 $umbra: 0.2;
 $penumbra: 0.14;
 $ambient: 0.12;
@@ -28,3 +125,27 @@ $shadow-23dp: 0px 11px 14px -7px rgba(0, 0, 0, $umbra), 0px 23px 36px 3px rgba(0
 $shadow-24dp: 0px 11px 15px -7px rgba(0, 0, 0, $umbra), 0px 24px 38px 3px rgba(0, 0, 0, $penumbra), 0px 9px 46px 8px rgba(0, 0, 0, $ambient);
 
 $def-trans: all .2s ease;
+
+$primary:       #2980b9;
+$secondary:     #7f8c8d;
+
+$yiq-text-dark:             rgba(0,0,0,0.87);
+$yiq-text-light:            rgba(255,255,255,0.87);
+
+$body-bg:                   #eaeaea;
+$body-color:                $yiq-text-dark;
+
+$link-color:                $primary;
+$link-decoration:           none;
+$link-hover-color:          #2946b9;
+$link-hover-decoration:     none;
+
+$paragraph-margin-bottom:   0.875rem;
+
+$font-family-sans-serif:      -apple-system, Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$table-cell-padding:          .625rem;
+$table-cell-padding-sm:       .3rem;
+
+$table-active-bg:             rgba(#000000, 0.85);
+$table-dark-color:            #ffffff;

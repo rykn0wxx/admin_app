@@ -22,7 +22,7 @@
 	    transition-duration: 0.3s;
 		}
 		&::placeholder {
-			color: rgba(255,255,255,0.5);
+			color: rgba(255,255,255,0.3);
 			opacity: 1;
 		}
 	}
@@ -51,6 +51,9 @@
 		margin: 0 auto;
 		background: $dark;
 		transition: all .3s cubic-bezier(0,0,.2,1);
+		.form-control {
+			color: #ecf0f1;
+		}
 	}
 }
 
